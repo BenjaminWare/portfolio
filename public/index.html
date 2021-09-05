@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ben's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
@@ -127,11 +126,53 @@
         </li>
       </ul>
     </nav>
-
+    <div class="intro">
+      <svg
+        width="717"
+        height="107"
+        viewBox="0 0 717 107"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M60.0303 52.448C65.6944 53.504 70.3504 56.336 73.9984 60.944C77.6464 65.552 79.4704 70.832 79.4704 76.784C79.4704 82.16 78.1264 86.912 75.4384 91.04C72.8464 95.072 69.0543 98.24 64.0623 100.544C59.0703 102.848 53.1663 104 46.3503 104H3.00635V3.488H44.4783C51.2943 3.488 57.1503 4.592 62.0463 6.8C67.0383 9.008 70.7823 12.08 73.2784 16.016C75.8704 19.952 77.1664 24.416 77.1664 29.408C77.1664 35.264 75.5823 40.16 72.4143 44.096C69.3423 48.032 65.2144 50.816 60.0303 52.448ZM23.1664 44.96H41.5983C46.3983 44.96 50.0943 43.904 52.6863 41.792C55.2783 39.584 56.5743 36.464 56.5743 32.432C56.5743 28.4 55.2783 25.28 52.6863 23.072C50.0943 20.864 46.3983 19.76 41.5983 19.76H23.1664V44.96ZM43.4704 87.584C48.3664 87.584 52.1583 86.432 54.8463 84.128C57.6303 81.824 59.0224 78.56 59.0224 74.336C59.0224 70.016 57.5823 66.656 54.7023 64.256C51.8223 61.76 47.9343 60.512 43.0383 60.512H23.1664V87.584H43.4704Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M115.698 19.76V44.96H149.538V60.944H115.698V87.584H153.858V104H95.5376V3.34399H153.858V19.76H115.698Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M258.146 104H237.986L192.338 35.024V104H172.178V3.34399H192.338L237.986 72.464V3.34399H258.146V104Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M446.733 3.488L418.653 104H394.893L376.029 32.432L356.301 104L332.685 104.144L305.613 3.488H327.213L344.925 81.536L365.373 3.488H387.837L407.133 81.104L424.989 3.488H446.733Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M521.529 84.848H481.497L474.873 104H453.705L489.849 3.34399H513.321L549.465 104H528.153L521.529 84.848ZM516.057 68.72L501.513 26.672L486.969 68.72H516.057Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M614.815 104L592.639 64.832H583.135V104H562.975V3.488H600.703C608.479 3.488 615.103 4.88 620.575 7.664C626.047 10.352 630.127 14.048 632.815 18.752C635.599 23.36 636.991 28.544 636.991 34.304C636.991 40.928 635.071 46.928 631.231 52.304C627.391 57.584 621.679 61.232 614.095 63.248L638.143 104H614.815ZM583.135 49.712H599.983C605.455 49.712 609.535 48.416 612.223 45.824C614.911 43.136 616.255 39.44 616.255 34.736C616.255 30.128 614.911 26.576 612.223 24.08C609.535 21.488 605.455 20.192 599.983 20.192H583.135V49.712Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M675.385 19.76V44.96H709.225V60.944H675.385V87.584H713.545V104H655.225V3.34399H713.545V19.76H675.385Z"
+          stroke="white"
+          stroke-width="5"
+        />
+      </svg>
+    </div>
     <main>
-      <section id="header">
-        <h1>Ben Ware</h1>
-      </section>
+      <section id="header"></section>
       <div class="layer1 spacer"></div>
       <section id="Education">
         <h2 name="Education" id="Education">Education</h2>
@@ -161,55 +202,59 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="middle">
         <h2 name="Jobs" id="Jobs">Jobs</h2>
         <div class="card-set">
           <div id="AFRL" class="card">
             <h3>Wright Scholars AFRL</h3>
             <p>
-              Using Unreal Engine 4 in a small team I helped create a VR laser dazzle simulator. Laser dazzle is the effect when a laser is shined directly in someone's eyes.
+              Using Unreal Engine 4 in a small team I helped create a VR laser
+              dazzle simulator. Laser dazzle is the effect when a laser is
+              shined directly in someone's eyes.
             </p>
           </div>
           <div id="papajohn" class="card">
             <h3>Papa John's Delivery Driver</h3>
             <p>
-              Delivery taught me about performing at a highly accurate level in a fast pace team oriented environment.
+              Delivery taught me about performing at a highly accurate level in
+              a fast pace team oriented environment.
             </p>
           </div>
-          <div id="OSU" class="card"><h3>Software One TA</h3>
-          <p>
-            Teaching software helped me soldify my coding concepts and gave me a great edge in debugging.
-          </p>
-        </div>
+          <div id="OSU" class="card">
+            <h3>Software One TA</h3>
+            <p>
+              Teaching software helped me soldify my coding concepts and gave me
+              a great edge in debugging.
+            </p>
+          </div>
         </div>
       </section>
       <section>
         <h2 name="Projects" id="Projects">Projects</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, velit.
-          Esse eius atque voluptatum similique cumque, id excepturi consectetur
-          nostrum soluta ducimus voluptatibus dolor inventore aliquid explicabo
-          sequi neque doloribus ipsum at assumenda mollitia. Ipsam architecto,
-          incidunt doloremque consequuntur hic nam natus soluta explicabo dolor
-          nisi reiciendis, dicta consectetur aliquid, nesciunt quod. Ipsa optio
-          ut perspiciatis atque quo eum amet nostrum necessitatibus veniam rem
-          est provident, adipisci voluptatum aliquam dicta commodi quae fugiat
-          unde accusamus dignissimos aspernatur esse illum quas corporis? Esse
-          reprehenderit eveniet repudiandae mollitia dicta, a ipsa rerum
-          molestias dolor quae sint quisquam ab sed atque dolores perspiciatis.
-          Beatae repudiandae quaerat, ex delectus dicta facilis architecto
-          necessitatibus vel tempora molestias eligendi perspiciatis sequi
-          itaque esse cupiditate rem omnis earum doloremque consectetur, magni
-          laborum nam aperiam? Magni sequi quo corporis quae voluptatem, minima
-          delectus nesciunt excepturi sapiente nobis repellat ea, optio odit
-          veniam corrupti eaque officia dolores explicabo blanditiis ab! Aliquid
-          soluta perspiciatis eum recusandae impedit porro magnam culpa, sed
-          accusamus reprehenderit odit dolorum quasi quo, accusantium quae
-          voluptatibus vero obcaecati quibusdam labore id minima rerum
-          voluptates. Debitis ex enim, mollitia voluptas nostrum ipsam accusamus
-          error quos facilis animi eos quidem vel a molestias pariatur,
-          dignissimos officia doloribus atque.
-        </p>
+        <div class="card-set">
+          <div id="chris" class="card">
+            <h3>Christopher's Website</h3>
+            <p>
+              Local Dayton restaurant website. Included a fully responsive menu
+              and admin page that allowed adding and changing menu items. Used
+              NextJS, Apollo, Firebase, and Imgix
+            </p>
+          </div>
+          <div id="ll" class="card">
+            <h3>Logical Lasers</h3>
+            <p>
+              Mobile app available on iOS and android. Puzzle game about bending
+              lasers to hit targets. Built in Unreal Engine 4.
+            </p>
+          </div>
+          <div id="BRE" class="card">
+            <h3>Bethany Resident Enrichment</h3>
+            <p>
+              A forum type site that allowed residents of Bethany Lutheran
+              Village retirement home to connect over their interests.
+            </p>
+          </div>
+        </div>
       </section>
       <div class="bottom spacer"></div>
     </main>

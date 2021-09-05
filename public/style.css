@@ -1,6 +1,7 @@
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
+  overflow-x:hidden;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -107,6 +108,83 @@ section h2 {
 .fa-secondary {
   transition: var(--transition-speed);
 }
+.intro {
+  background-color:#001220;
+  position:absolute;
+  z-index:3;
+  width:100vw;
+  height:100vh;
+  overflow-x:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation:move 2s ease forwards 3.3s;
+}
+.intro svg {
+  animation:fill 2s ease forwards 3s;
+}
+.intro svg path {
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.intro svg path:nth-child(1) {
+ stroke-dasharray:566px;
+ stroke-dashoffset:566px;
+ animation: letter-anim 2s ease forwards;
+}
+.intro svg path:nth-child(2) {
+  stroke-dasharray:462px;
+  stroke-dashoffset:462px;
+  animation: letter-anim 2s ease forwards 0.3s;
+ }
+ .intro svg path:nth-child(3) {
+  stroke-dasharray:586px;
+  stroke-dashoffset:586px;
+  animation: letter-anim 2s ease forwards 0.6s;
+ }
+ .intro svg path:nth-child(4) {
+  stroke-dasharray:791px;
+  stroke-dashoffset:791px;
+  animation: letter-anim 2s ease forwards 0.9s;
+ }
+ .intro svg path:nth-child(5) {
+  stroke-dasharray:478px;
+  stroke-dashoffset:478px;
+  animation: letter-anim 2s ease forwards 1.2s;
+ }
+ .intro svg path:nth-child(6) {
+  stroke-dasharray:530px;
+  stroke-dashoffset:530px;
+  animation: letter-anim 2s ease forwards 1.5s;
+ }
+ .intro svg path:nth-child(7) {
+  stroke-dasharray:462px;
+  stroke-dashoffset:462px;
+  animation: letter-anim 2s ease forwards 1.8s;
+ }
+ @keyframes letter-anim {
+   to {
+     stroke-dashoffset:0;
+   }
+ }
+ @keyframes fill{
+   from {
+     fill:transparent;
+   }
+  to {
+    fill:white;
+  }
+}
+  @keyframes move {
+    from {
+      left:0rem;
+    }
+    to {
+      height:10rem;
+      left:2.5rem;
+      background-color:transparent;
+    }
+  }
 
 .logo {
   font-weight: bold;
@@ -197,7 +275,22 @@ section h2 {
   background-repeat:no-repeat;
   background-size: cover;
 }
+#chris {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('chris.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
 
+}
+#ll {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('LL.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#BRE {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('BRE.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+}
 .spacer {
   aspect-ratio: 2100/300;
   width:100%;
@@ -211,6 +304,10 @@ section h2 {
 .bottom {
   background-image: url(./bottom.svg);
 }
+.middle { 
+  background-image: url(./middle.svg);
+}
+ 
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -233,6 +330,12 @@ section h2 {
 
   main {
     margin: 0;
+  }
+  @keyframes move {
+    to {
+      height:10rem;
+      background-color:transparent;
+    }
   }
 }
 
